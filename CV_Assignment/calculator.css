@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.wrapper{
+    display: block;
+    margin: 120px auto;
+    width: 240px;
+    font-size: 18px;
+}
+.frow{
+    display: grid;
+    grid-template-columns: 180px 60px;
+
+}
+#output{
+    border: 2px solid rgb(5, 5, 5);
+    padding: 10px;
+}
+.btn{
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+}
+.operator{
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+}
+#equal{
+    
+    background-color: #e4e2e2;
+    
+}
+.btn:hover{
+    cursor: pointer;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+    text-align: center;
+}

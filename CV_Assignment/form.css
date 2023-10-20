@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+}
+#form-container{
+    box-shadow: 0 0 20px #ccc;
+    width: 500px;
+    margin: 120px auto; 
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    padding-top: -40px;
+}
+input{
+    padding: 5px;
+    border-radius: 6px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+label{
+    padding-bottom: 4px;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: 250px 250px;
+}
+.name label{
+    grid-column: 1;
+    
+}
+.name label{
+    grid-column: 2;
+}
+.name input{
+    width: 80%;
+}
+ select{
+    padding: 5px;
+    border-radius: 6px;
+    width: 60%;
+}
+#male,#female{
+    width: 5%;
+}
+#buttons{
+    display: flex;
+    width: 60%;
+}
+#buttons input{
+    margin: 20px;
+}
+#buttons input:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+@media(max-width:510px){
+    .name{
+        display: block;
+        width: 75%;
+    }
+    #form-container{
+        width: 80%;
+    }
+    #buttons{
+        display: block;
+        padding-top: -10px;
+    }
+}
+
+

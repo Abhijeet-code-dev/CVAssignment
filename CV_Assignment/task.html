@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task</title>
+</head>
+<style>
+#fwrapper{
+    box-shadow: 0 0 10px #ccc;
+    display: block;
+    width: 500px;
+    margin: 120px auto;
+    text-align: center;
+    padding: 10px;
+}
+#arrContainer{
+    display: flex;
+    
+    padding: 10px;
+    margin-left: 100px;
+}
+.number{
+    padding: 10px;
+    
+}
+input{
+    padding: 6px;
+    width: 60%;
+}
+.btn{
+    padding: 6px;
+    font-size: 14px;
+    
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+#output{
+    margin: 12px auto;
+    padding: 5px;
+    width: 80%;
+    
+}
+#sortedEl{
+    padding: 10px;
+}
+@media(max-width: 550px){
+    #fwrapper{
+        width: 350px;
+    }
+    #arrContainer{
+        margin-left: 15px;
+    }
+}
+</style>
+<body>
+    <div id="fwrapper">
+    <h2>Reverse a String!</h2>
+    <form id="form1" action="">
+        <input id="inputBox" type="text" placeholder="Enter a String" pattern="[A-Za-z]" onkeydown="return /[a-zA-Z]/i.test(event.key)" required>
+        <button id="inputBtn" class="btn">Reverse It</button>
+        <div id="output"></div>
+    </form>
+
+    <!--To sort an array-->
+    <h2>Sort Numbers in Descending Order</h2>
+    <div id="arrContainer">
+        <div class="number">17</div>
+        <div class="number">31</div>
+        <div class="number">5</div>
+        <div class="number">8</div>
+        <div class="number">9</div>
+        <div class="number">65</div>
+        <div class="number">72</div>
+        <div class="number">40</div>
+    </div>
+    <button id="sortBtn" class="btn">Sort it!</button>
+    <div id="sorted"></div>
+    </div>
+
+    <script>
+        let inputText = document.getElementById('inputBox');
+        let outputEl = document.getElementById("output");
+        let rev = document.getElementById('inputBtn');
+
+        rev.addEventListener('click',()=>{
+            let str = inputText.value;
+            let reversed = str.split("").reverse().join("");
+            outputEl.innerText = reversed;
+            outputEl.style.border="2px solid blue";
+            outputEl.style.padding = "8px";
+        })
+
+        //Sorting array of numbers in descending order
+        
+        let sortBtnEl = document.getElementById('sortBtn');
+        let sortedEl = document.getElementById('sorted');
+
+        let arr = [17,31,5,8,9,65,72,40];
+        
+        sortBtnEl.addEventListener('click',()=>{
+            
+            let newArr = arr.slice().sort((a,b)=>b-a);
+            console.log(newArr);
+            sortedEl.innerText = newArr;
+            sortedEl.style.margin = "10px";
+           
+        })
+        
+        
+    </script>
+</body>
+</html>
