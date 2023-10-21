@@ -32,11 +32,11 @@ img,#javaContainer{
     margin-left: 40px;
 }
 #javaContainer{
-    margin: 20px;
+    margin: 30px;
     text-align: center;
     padding-top: 10vh;
     height: 150px;
-    
+    margin-left: 20px;
 }
 
 footer{
