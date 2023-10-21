@@ -1,6 +1,6 @@
 # CVAssignment
 **Calculator, Survey Form, JS Task can be accessed and UI can be seen just by clicking on them.
-Programs of Java are in JavaPrograms Folder and there outputs are displayed below.
+**Programs of Java are in JavaPrograms Folder and there outputs are displayed below.
 1. Shuffle the array
    ![j1](https://github.com/Abhijeet-code-dev/CVAssignment/assets/81462249/a26da1f2-976f-4d60-b007-7ed2851ed899)
 
